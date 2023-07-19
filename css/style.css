@@ -13,4 +13,480 @@ a{
 li{
     list-style: none;
 }
+.container{
+    padding: 0 7%;
+}
+.btn-primary{
+    border-radius: 48px;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    padding: 10px 25px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.btn-success{
+    border-radius: 48px;
+    background: #4EC5F7;
+    padding: 10px 25px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
 /*Main Style Start*/
+/*header Part Hare*/
+header{
+    background: #fff;
+    padding: 30px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+ .logo a{
+    display: flex;
+    align-items: center;
+}
+.logo a h1{
+    color:  #FF42A5;
+    font-size: 45px;
+    font-weight: 700;
+    padding-left: 20px;
+}
+header .logo a h1 span{
+    color: #0B0223;
+}
+header .menu-bar{
+    display: flex;
+}
+.menu-item{
+   margin-right: 10px;
+   padding: 0px 15px;
+   color: #3C354F;
+   font-size: 18px;
+   font-weight: 500;
+   display: flex;
+   align-items: center;
+}
+.menu-item a{
+    padding: 10px 10px;
+    color: #3C354F;
+    font-size: 18px;
+    font-weight: 500;
+}
+.flow-us{
+    background: rgba(11, 2, 35, 0.10);
+    border-radius: 8px;
+    padding: 0px 20px;
+}
+.flow-us-link img{
+    width: 25px;
+}
+/*banner part Start*/
+.banner{
+    display: flex;
+    width: 100%;
+}
+.banner-content{
+    width: 50%;
+    background: url("../asset/Group\ 14.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 0 7%;
+
+}
+.banner-conent-group{
+    padding: 30px 0;
+}
+.banner-content img{
+    width: 100%;
+}
+.banner-content h2{
+    color: #0B0223;
+    /* text-align: center; */
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.banner-content h1{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* text-align: center; */
+    font-size: 95px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.banner-content-item li{
+    padding: 5px 0;
+    color: #534C64;
+    /* text-align: center; */
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: lowercase;
+}
+.banner-content-item li span{
+    margin-right: 7px;
+    color: #F948B2;
+    width: 20px;
+    display:inline-block;
+}
+.btn-group{
+    margin-top: 30px;
+}
+.banner-img{
+    width: 50%;
+    padding: 0 7%;
+}
+.banner-img img{
+    width: 100%;
+}
+/*Online Games Section Start*/
+.hedain-title{
+    text-align: center;
+    padding: 50px 0;
+}
+.hedain-title h2{
+    color: #0B0223;
+    font-size: 42px;
+    font-weight: 700;
+}
+.hedain-title h2 span{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hedain-title p{
+    color: #534C64;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+}
+.online-games{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+    padding-bottom: 50px;
+}
+.online-content{
+    width: 100%;
+    position: relative;
+}
+.online-content img{
+    width: 100%;
+}
+.watch-now{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* transform: translate(-50%, -50%); */
+    color: #F948B2;
+    text-align: center;
+    border-radius: 16px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%);
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+}
+.icon{
+    /* margin: 0; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .icon-play{
+    border-radius: 100%;
+    background-color: #fff;
+    padding: 15px 15px;
+    font-size: 18px;
+    color:#534C64 ;
+    cursor: pointer;
+  }
+  .icon p{
+    margin-top: 20px;
+
+  }
+  .online-content:hover .watch-now{
+    opacity: 1;
+    visibility: visible;
+  }
+  .online-conten-wrap p{
+    padding: 10px 30px 0 0;
+  }
+  /*Online Play Game*/
+  .online-play-game{
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+  }
+  .online-play-content{
+    width: 50%;
+    text-align: right;
+    padding-right: 50px;
+  }
+  .online-play-content h2{
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+  }
+  .online-play-content h2 span{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .online-play-content p{
+    color: #534C64;
+    text-align: right;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+  }
+  .online-play-image {
+    width: 50%;
+    padding-left: 50px;
+    position: relative;
+  }
+  .online-play-image img{
+    width: 100%;
+  }
+  .online-play-overlap{
+    width: 35%;
+    position: absolute;
+    top: 65%;
+    left: 0;
+    z-index: 1;
+  }
+  .online-play-overlap img{
+    width: 100%;
+  }
+  /*Our all games hare*/
+  .our-all-games{
+    width: 100%;
+    padding: 70px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .our-games{
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    border-radius: 50px;
+    background: #FFF;
+    transition: all .3s;
+    border: 1px solid transparent;
+    width: 18%;
+    margin-bottom: 10px;
+  }
+  .our-games:hover{
+    border: 1px solid #F948B2;
+  }
+  .game-thamnail{
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+  }
+  .game-thamnail img{
+    width: 100%;
+  }
+  /*Foorer Section*/
+  footer{
+    width: 100%;
+    background:#0B0223;
+    padding: 70px 0;
+    text-align: center;
+  }
+  .footer-logo{
+    display: flex;
+    justify-content: center;
+  }
+  .footer-logo a{
+    display: flex;
+  }
+  .footer-logo a h1{
+    color:  #FF42A5;
+    font-size: 35px;
+    font-weight: 700;
+    padding-left: 20px;
+}
+footer .footer-logo a h1 span{
+    color: #fff;
+}
+.quick-link{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.quick-link a{
+    color: #fff;
+    margin-right: 25px;
+    font-size: 16px;
+}
+.quick-flow,.trams-conditon{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.quick-flow a{
+    color: #fff;
+    font-size: 18px;
+    margin-right: 22px;
+}
+.trams-conditon a{
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 20px;
+}
+.copy-right{
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+
+/******************************/
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 420px) and (max-width: 576px){
+   /* .container{
+       padding:0 15%;
+   } */
+    header{
+        flex-direction: column;
+        padding-bottom: 70px;
+        box-shadow: none;
+        justify-content: center;
+        /* width: 100%; */
+    }
+    .logo {
+     padding-top: 50px 0;
+     justify-content: center;
+     text-align: center;
+    }
+    header .menu-bar{
+        flex-direction: column;
+        text-align: center;
+    }
+    .menu-item {
+        text-align: center;
+        display: inline-block;
+        padding: 16px 10px;
+    }
+    .flow-us{
+        padding: 10px 20px;
+        display: flex;
+    }
+/*Banner Sectuin*/
+.banner{
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+.banner-content{
+    width: 100%;
+    padding: 0 ;
+} 
+.banner-img{
+    width: 100%;
+    padding: 0;
+}
+.banner-content h2{
+    font-size: 28px;
+    text-align: center;
+}
+.banner-content h1{
+    font-size: 45px;
+    text-align: center;
+}
+.banner-content-item li{
+    font-size: 16px;
+    font-weight: 400;
+}
+.banner-conent-group{
+    text-align: center;
+    width: 100%;
+    padding: 50px 0;
+}
+/*Online Games*/
+.hedain-title h2{
+    font-size: 28px;
+}
+.online-games{
+    grid-template-columns: repeat(1, 1fr);
+}
+.online-conten-wrap{
+    margin-bottom: 20px;
+}
+
+/*Online Play Games*/
+.online-play-game{
+    flex-direction: column;
+}
+.online-play-content{
+    width: 100%;
+    padding: 50PX 0;
+    text-align: center;
+}
+.online-play-image {
+    width: 100%;
+    padding-left: 0px;
+}
+.online-play-content h2{
+    font-size: 35px;
+    line-height: 50px;
+    padding-bottom: 30px;
+}
+.online-play-overlap{
+    left: -7%;
+}
+/*All Games Hare*/
+.our-all-games{
+    justify-content: space-between;
+    /* background-color: #FF42A5; */
+}
+.our-games{
+    width: 20%;
+    border-radius: 20px;
+    justify-content: space-between;
+}
+.our-games p{
+    font-size: 12px;
+}
+.online-play-content p {
+    text-align: center;
+}
+
+.quick-link,.quick-flow,.trams-conditon{
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+.quick-link a,.quick-flow a,.trams-conditon a{
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {...}
